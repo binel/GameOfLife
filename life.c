@@ -97,15 +97,15 @@ void simulate(char grid[GRIDHEIGHT][GRIDWIDTH], int frameNum) {
 	isAlive = FALSE; 
       }
       //2. If the cell is alive and has 2 or 3 live neighbors, it lives 
-      else if(isAlive == TRUE && numNeighbors < 4) {
+      if(isAlive == TRUE && numNeighbors < 4 && numNeighbors > 1) {
 	isAlive = TRUE;
       }
       //3. If the cell is alive and has 4 live neighbors, it dies 
-      else if(isAlive == TRUE && numNeighbors == 4) {
+      if(isAlive == TRUE && numNeighbors >= 4) {
 	isAlive = FALSE; 
       }
       //4. If the cell is dead and has exactly 3 live neighbors, it lives
-      else if(isAlive == FALSE && numNeighbors == 3) {
+      if(isAlive == FALSE && numNeighbors == 3) {
 	isAlive = TRUE; 
       }
       
@@ -146,5 +146,5 @@ void printGrid(char grid[GRIDHEIGHT][GRIDWIDTH], int frameNum){
     }
     printf("\n");
   }
-  printf("FRAME %i\n", frameNum); 
+  printf("FRAME %i", frameNum); 
 }
