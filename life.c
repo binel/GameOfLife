@@ -90,7 +90,6 @@ void simulate(char grid[GRIDHEIGHT][GRIDWIDTH], int frameNum) {
 
       //count the number of neighbors of this cell 
       int numNeighbors = countNeighbors(grid, x, y);
-      printf("%d", numNeighbors); 
       //determines if alive in the next round
       //1. If the cell is alive and has 0 or 1 live neighbors, it dies 
       if(isAlive == TRUE && numNeighbors < 2) {
@@ -116,7 +115,6 @@ void simulate(char grid[GRIDHEIGHT][GRIDWIDTH], int frameNum) {
 	nextGrid[y][x] = ' ';
       }
     } 
-    printf("\n");
   }
   //copy old grid to new grid
   for(i = 0; i < GRIDHEIGHT; i++){
@@ -147,4 +145,5 @@ void printGrid(char grid[GRIDHEIGHT][GRIDWIDTH], int frameNum){
     printf("\n");
   }
   printf("FRAME %i", frameNum); 
+  fflush(stdout);
 }

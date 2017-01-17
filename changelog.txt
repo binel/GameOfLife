@@ -1,0 +1,13 @@
+Changelog 
+
+Jan 11: Wrote code to get the initial positions of cells from the command line
+    as well as a function to print the grid 
+
+Jan 13: Started counting neighbors and set up the outline for how simulation
+    will work. 
+
+Jan 15: Finished the simulation portion of the code, refactored slightly, 
+    fixed bugs relating to counting neighbors and world wrapping. 
+
+Jan 17: Continued testing, wrote makefile, added some more comments, wrote 
+    readme. 
