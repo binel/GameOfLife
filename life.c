@@ -6,12 +6,16 @@
 #define TRUE 1
 #define FALSE 0
 
+//prints the given grid to the terminal, including the frame number 
 void printGrid(char grid[GRIDHEIGHT][GRIDWIDTH], int frameNum);
 
+//checks whether a given cell is alive or dead, returns TRUE or FALSE
 int checkAlive(char grid[GRIDHEIGHT][GRIDWIDTH], int x, int y);
 
+//advances the simulation by 1 step. 
 void  simulate(char grid[GRIDHEIGHT][GRIDWIDTH], int frameNum);
 
+//given a cell, it counts the number of neighbors of that cell that are alive. 
 int countNeighbors(char grid[GRIDHEIGHT][GRIDWIDTH], int x, int y); 
 
 int main(int argc, char* argv[]) {

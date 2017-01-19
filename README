@@ -1,6 +1,0 @@
-My solution to the assignment unfortunately doesn't fufill any of the extra 
-   challenges, but it does meet the minimum requirements. The function
-   "simulate" is where most of the action happens, as it handles determining
-   the status of each cell. The functions "checkAlive" and "countNeighbors" are
-   helper methods to the simulate function, which preform the action their name
-   implys. 
